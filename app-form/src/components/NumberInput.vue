@@ -10,7 +10,7 @@
         @blur="validate"
     />
     <span v-if="errors" class="error">
-      {{ errors }}
+      {{ errors }} !!
     </span>
   </div>
 </template>
