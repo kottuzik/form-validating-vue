@@ -1,6 +1,9 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <h2>Vue tests</h2>
+  <router-view>
+
+  </router-view>
   <dynamic-form/>
 </template>
 

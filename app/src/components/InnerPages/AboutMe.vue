@@ -1,5 +1,6 @@
 <template>
   <h2>About Me page</h2>
+  <a href="#/another">Go to another page</a>
 </template>
 
 <script>
