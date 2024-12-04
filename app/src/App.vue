@@ -1,15 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h2>Vue tests</h2>
+  <dynamic-form/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+
+import DynamicForm from "@/components/DynamicForm";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DynamicForm
   }
 }
 </script>

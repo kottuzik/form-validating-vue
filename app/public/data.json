@@ -1,0 +1,54 @@
+{
+  "title": "User Profile",
+  "fields": [
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Full Name",
+      "required": true,
+      "validation": {
+        "pattern": "^[a-zA-Z\\s]{2,50}$"
+      }
+    },
+    {
+      "id": "age",
+      "type": "number",
+      "label": "Age",
+      "required": true,
+      "validation": {
+        "min": 18,
+        "max": 100
+      }
+    },
+    {
+      "id": "contactInfo",
+      "type": "group",
+      "label": "Contact Information",
+      "fields": [
+        {
+          "id": "email",
+          "type": "email",
+          "label": "Email Address",
+          "required": true
+        },
+        {
+          "id": "phone",
+          "type": "text",
+          "label": "Phone Number",
+          "validation": {
+            "pattern": "^[0-9]{10}$"
+          }
+        }
+      ]
+    },
+    {
+      "id": "role",
+      "type": "select",
+      "label": "Role",
+      "required": true,
+      "validation": {
+        "options": ["Developer", "Designer", "Manager"]
+      }
+    }
+  ]
+}
